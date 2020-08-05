@@ -1,0 +1,125 @@
+<!--................ SE | 2017 | 037 ...................-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="order.css">
+        <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Emblema One' rel='stylesheet'>
+    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <body class="orderbody">
+        
+        <div class="container">
+            
+            <div class="topnav">
+                <a style="width: 60%" class="title" href="index.html">Bruno's Pizzeria</a>
+                <a href="#home" class="nav">Order Now</a>
+                <a href="#news" class="nav">Register</a>
+                <a href="#contact" class="nav">Features</a>
+            </div>
+            
+            <img src="coverimg.jpg" style="width:100%">
+            <div class="centered">Order Now</div>
+        </div>
+        
+        <div class="orderdiv">
+            <table class="ordertable">
+                <tr>
+                    <td>
+                        <h3>Pickup or Delivery</h3>
+                        <input type="radio" name="ordermethod" id="pickup" value="Pickup" onclick="pickup()">Pickup<br>
+                        <input type="radio" name="ordermethod" id="delivery" value="Delivery" onclick="delivery()">Delivery<br>
+                        <h3>Your Pizza Order</h3>
+                        <textarea name="order" id="order" rows="4" cols="50"></textarea><br>
+                    </td>
+                    <td>
+                        <h3>Customer Details</h3>
+                        <label for="cuname">Name</label><br>
+                        <input type="text" name="cuname" id="cuname"><br><br>
+                        <label for="cuemail">Email</label><br>
+                        <input type="email" name="Cuemail" id="cuemail"><br><br>
+                        <label for="cunumber">Contact Number</label><br>
+                        <input type="text" name="cunumber" id="cunumber"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="deliveryinfo">    
+                        <h3>Delivery Address</h3>
+                        <label for="deliveryaddress">Address</label><br>
+                        <input type="text" name="deliveryaddress" id="deliveryaddress"> <br><br>
+                        <label for="deliverysuburb">Suburb</label><br>
+                        <input type="text" name="deliverysuburb" id="deliverysuburb"> <br><br>
+                        <label for="deliverycode">Postal Code</label><br>
+                        <input type="text" name="deliverycode" id="deliverycode"> <br><br>
+                    </td>
+                    </div>
+                    <td>
+                        <h3>Billing Address</h3>
+                        Same as delivery address? <br>
+                        <input type="radio" name="addressconfirm" value="yes" id="yes" onclick="getInfo()">Yes <br>
+                        <input type="radio" name="addressconfirm" id="no" value="no" onclick="blankInfo()">No <br><br>
+                        <label for="billaddress">Address</label><br>
+                        <input type="text" name="billaddress" id="billaddress"> <br><br>
+                        <label for="billsuburb">Suburb</label><br>
+                        <input type="text" name="billsuburb" id="billsuburb"> <br><br>
+                        <label for="billcode">Postal Code</label><br>
+                        <input type="text" name="billcode" id="billcode"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Pay Online or on pickup?</h3>
+                        <input type="radio" name="pay" id="paypickup" value="paypickup"  onclick="ondelivery()" > Cash on Delivery <br>
+                        <input type="radio" name="pay" id="payonline" value="payonline" onclick="online()"> Pay Online <br>
+                    </td>
+                
+                    <td id="payment">
+                            <h3>Payment Information</h3>
+                            <label for="cardname">Full Name</label> <br>
+                            <input type="text" name="cardname" id="cardname"> <br><br>
+                            <label for="cardnumber">Credit Card</label> <br>
+                            <input type="text" name="cardnumber" id="cardnumber" placeholder="0000 0000 0000 0000"><br><br>
+                            <label>Expiry</label><br>
+                            <select name="month" id="month">
+                                <option value="january">January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                                <option value="may">May</option>
+                                <option value="june">June</option>
+                                <option value="july">July</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select><br>
+                            <input type="text" name="year" id="year"><br><br>
+                            <label for="ccv">CCV</label><br>
+                            <input type="text" name="ccv" id="ccv">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="verify()">Confirm Order</button>
+                    </td>
+                </tr>
+             </table>
+        </div>
+        <!--................ SE | 2017 | 037 ...................-->
+        <div class="bbar">
+            <table class="center2" width="70%">
+                <tr>
+                    <td class="bleft" style="font-size: 12px">2020 Bruno's Pizzeria</td>
+                    <td class="bcenter"><a href="#" class="fa fa-facebook"></a><b> |</b><a href="#" class="fa fa-twitter"></a><b> | </b><a href="#" class="fa fa-google"></a></td>
+                    <td class="bright" style="font-size: 12px">Created By PS Software Pvt LTD</td>
+                </tr>
+            </table>            
+        </div>
+        <script src="order.js"></script>
+    </body>
+</html>
+<!--................ SE | 2017 | 037 ...................-->

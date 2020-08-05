@@ -1,0 +1,89 @@
+.cover {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Emblema One';font-size: 70px;
+    color: white;
+    border: 9px;
+}
+
+.orderdiv{
+    background-color: white;
+}
+
+.ordertable td{
+    color: black;
+}
+
+table.ordertable {
+    background-color: white;
+    width: 70%;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ordertable td:nth-child(2n-1){
+    text-align: left;
+    padding-left: 150px;
+}
+.ordertable td:nth-child(2n){
+    text-align: left;
+    padding-left: 100px;
+}
+
+.ordertable {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ordertable #payment, #deliveryinfo{
+    display: table-column;
+}
+
+.ordertable h3{
+    font-size: 25px;
+    color: orange;
+    padding-top: 0px;
+}
+
+.form-text{
+    size="50";
+}
+
+button{
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] , input[type="email"]{
+    width: 90%;
+    padding:5px 0;
+    border-color: black;
+}
+
+.ordertable #payment{
+    width: 85%;
+}
+.ordertable #deliveryinfo{
+    width: 85%;
+    margin-left: 0px;
+}
